@@ -1,3 +1,7 @@
+# leoata fork
+
+Adding more functionality and possibly a bitcoin miner
+
 ![Spectre Rootkit Logo](https://i.imgur.com/P529RIt.png)
 
 Welcome to the *Spectre Rootkit*, a proof-of-concept Windows kernel-mode rootkit I wrote with the hopes of demystifying the Windows kernel for red team usage. The Spectre Rootkit abuses legitimate communication channels in order to receive commands from a C2. You can read more about how it works [here](https://github.com/D4stiny/spectre/wiki/Hooking-IOCTL-Communication-via-Hooking-File-Objects). This project was the focus of my talk, "Demystifying Modern Windows Rootkits", presented at both [Black Hat USA 2020](https://www.blackhat.com/us-20/briefings/schedule/index.html#demystifying-modern-windows-rootkits-20918) and [DEF CON 28](https://defcon.org/html/defcon-safemode/dc-safemode-speakers.html#Demirkapi).
