@@ -32,9 +32,6 @@
     <ClInclude Include="xorstr.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SpectreDriver.h">
       <Filter>Header Files</Filter>
     </ClInclude>

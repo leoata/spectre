@@ -162,7 +162,6 @@
   <ItemGroup>
     <ClInclude Include="common.h" />
     <ClInclude Include="DriverServiceInstaller.h" />
-    <ClInclude Include="resource.h" />
     <ClInclude Include="SpectreDriver.h" />
     <ClInclude Include="xorstr.hpp" />
   </ItemGroup>
