@@ -132,7 +132,6 @@ PacketDispatch::SendSynchronousAfdRequest (
 	// Send the IRP.
 	//
 	status = IoCallDriver(AfdDevice, Irp);
-
 	//
 	// If the send is pending, wait.
 	//

@@ -53,7 +53,7 @@ BOOLEAN SetPrivilege (
 
     if (GetLastError() == ERROR_NOT_ALL_ASSIGNED)
     {
-        DBGPRINT("SetPrivilege: The token does not have the specified privilege.", GetLastError());
+        DBGPRINT("SetPrivilege: The token does not have the specified privilege (Error: %i).", GetLastError());
         return FALSE;
     }
 
@@ -367,6 +367,7 @@ DriverServiceInstaller::StartDriver (
     //
     // Load the driver.
     //
+
     status = this->NtLoadDriver(&driverRegistryUnicodeString);
     if (NT_SUCCESS(status) == FALSE)
     {
