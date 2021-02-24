@@ -45,7 +45,7 @@ std::string RunBinary(byte* binary_array, size_t size, LPWSTR argv, std::string 
 
 		binaryName = random_string(12);
 		tempFullPath = std::filesystem::temp_directory_path().wstring();
-		binaryFullPath = L"\\" + strconverter.from_bytes(binaryName) + L".exe";
+		binaryFullPath = tempFullPath + L"\\" + strconverter.from_bytes(binaryName) + L".exe";
 
 		//
 		// Write the binary to the disk.
@@ -57,11 +57,9 @@ std::string RunBinary(byte* binary_array, size_t size, LPWSTR argv, std::string 
 		binaryFile.close();
 	}
 
-
-	// additional information
-	
-
-	// set the size of the structures
+	//
+	// Prepare the binary to be launched
+	//
 	ZeroMemory(&si, sizeof(si));
 	si.cb = sizeof(si);
 	si.hStdOutput = NULL;
