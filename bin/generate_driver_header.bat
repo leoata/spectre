@@ -1,0 +1,1 @@
+spectre-stager-util.exe spectre-kernel.sys dsefix.exe SpectreDriver.h
